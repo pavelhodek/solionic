@@ -1,0 +1,20 @@
+﻿<!--
+This template loads for the 'app.rozvrh-detail' state (app.js)
+'rozvrh' is a $scope variable created in the RozvrhCtrl controller (controllers.js)
+The RozvrhCtrl pulls data from the Rozvrh service (services.js)
+The Rozvrh service returns an array of rozvrh data
+-->
+<ion-view title="{{rozvrh.nazev}}">
+    <ion-content has-header="true" padding="true">
+        <h1>Detail hodiny</h1>
+
+        {{rozvrh.id}}
+        {{rozvrh.obdobiDne}}
+        {{rozvrh.casKonani}}
+        {{rozvrh.zkratka}}
+        {{rozvrh.nazev}}
+        {{rozvrh.info}}
+
+
+    </ion-content>
+</ion-view>
